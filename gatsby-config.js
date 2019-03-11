@@ -1,16 +1,58 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `nratmlol`,
+    menuLinks: [
+      {
+        name: `PORTFOLIO`,
+        link: `/`
+      },
+      {
+        name: `WHATIDO`,
+        link: `/whatido`
+      },
+      {
+        name: `ABOUT`,
+        link: `/about`
+      },
+      {
+        name: `CONTACT`,
+        link: `/contact`
+      }
+    ],
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@nratmlol`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-page-transitions`,
+    `gatsby-transformer-yaml`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#6CA8F`,
+        showSpinner: false,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,

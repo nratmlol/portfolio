@@ -13,20 +13,59 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
+// const Image = () => (
+//   <StaticQuery
+//     query={graphql`
+//       query {
+//         placeholderImage: file(relativePath: { eq: "steve.jpg" }) {
+//           childImageSharp {
+//             fluid(maxWidth: 90) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//     `}
+//     render={data => <Img placeholderStyle fluid={data.placeholderImage.childImageSharp.fluid} />}
+//   />
+// )
+// export default Image
+
+// const Image = ({ data }) => (
+//   <StaticQuery
+//     query={graphql`
+//       query {
+//         placeholderImage: file(relativePath: { eq: "steve_83x90.jpg" }) {
+//           childImageSharp {
+//             fixed(width: 83) {
+//               ...GatsbyImageSharpFixed
+//             }
+//           }
+//         }
+//       }
+//     `}
+//     render={data => <Img placeholderStyle fixed={data.placeholderImage.childImageSharp.fixed} />}
+//   />
+// )
+// export default Image
+
 const Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        placeholderImage: file(relativePath: { eq: "steve_transparent_83.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            resize(width: 90, height: 90){
+              src
+            }
+            fluid(maxWidth: 900) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img placeholderStyle fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default Image

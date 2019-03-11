@@ -1,0 +1,15 @@
+
+- categoy      : Web Design
+  name         : Gatsby.js
+  discriptions : [ポートフォリオサイト, Pomodoro Timer made by Gatsby, おいしそうな餅.com] 
+  image        : _gatsbyjs.png
+
+- categoy      : Scraipng
+  name         : Python
+  discriptions : [Amazonサイト商品のセラー情報取得ツール, Twitterユーザー情報取得ツール, Google画像収集ツールポートフォリオサイト, ]
+  image        : _python.png
+
+- categoy      : Office Tool
+  name         : VBA, SQL
+  discriptions : [Excel(View) Access(DB)による在庫管理ツール, Excel(View) Access(DB)による棚卸しツール, Excel(View) Oracle(DB)による工程進捗表示ツール, ]
+  image        : _office.png
