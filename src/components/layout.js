@@ -41,7 +41,7 @@ const Content = styled.div`
 
 const Layout = ({ children, pageTitle }) => (
   <Wrapper>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`, 'portfolio', 'nratmlol']} />
     <Header portfolioTitle={`-PortFolio:`} />
     <Title>{pageTitle}</Title>
     <Content>

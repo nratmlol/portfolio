@@ -22,8 +22,8 @@ const Discription = styled.p`
 
 const IndexPage = () => (
   <Layout pageTitle="-PortFolio">
-    <Introduce>Hello, my name is <Name>nratmlol.</Name></Introduce>
-    <Discription>I want to do something for someone. you first, me second.</Discription>
+    <Introduce>Hello, my name is <Name>Rui Asada.</Name></Introduce>
+    <Discription>I want to do something for someone.</Discription>
   </Layout>
 )
 
