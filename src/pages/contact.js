@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 const IndexPage = ({ data }) => (
   <Layout pageTitle="-Contact">
     {data.allContactYaml.edges.map(({ node }) => (
-      <ul>
+      <ul style={{fontFamily: "-apple-system, BlinkMacSystemFont, Helvetica Neue, 游ゴシック Medium, YuGothic, YuGothicM, Hiragino Kaku Gothic ProN, メイリオ, Meiryo, sans-serif"}}>
         <li id={node.id}>{node.name}: {node.href}</li>
       </ul>
     ))}

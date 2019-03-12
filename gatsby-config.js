@@ -19,15 +19,21 @@ module.exports = {
         link: `/contact`
       }
     ],
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: ``,
     author: `@nratmlol`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-page-transitions`,
     `gatsby-transformer-yaml`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-page-transitions`,
+      options: {
+        
+        trasitionTime: 800,
+      }
+    },
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -60,8 +66,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `nratmlol-portfolio`,
+        short_name: `portfolior`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
